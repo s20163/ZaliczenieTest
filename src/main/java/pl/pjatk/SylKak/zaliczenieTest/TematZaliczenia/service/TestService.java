@@ -16,7 +16,7 @@ public class TestService {
     }
 
     public Optional<ZaliczenieModel> getZaliczenieModel(Long zaliczenieModelId) {
-        if(testRepository.listZaliczenieModelById(zaliczenieModelId).isEmpty()) {
+        if (testRepository.listZaliczenieModelById(zaliczenieModelId).isEmpty()) {
             throw new ZaliczenieModelNotFoundException();
         }
         return testRepository.listZaliczenieModelById(zaliczenieModelId);
